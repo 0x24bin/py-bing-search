@@ -45,7 +45,7 @@ class PyBingWebException(Exception):
 class PyBingWebSearch(PyBingSearch):
 
     SEARCH_WEB_BASE = 'https://api.datamarket.azure.com/Bing/Search/Web'
-    WEB_ONLY_BASE = 'https://api.datamarket.azure.com/Bing/SearchWeb/v1/Web'
+    WEB_ONLY_BASE = 'https://api.datamarket.azure.com/Bing/Search/v1/Web'
     QUERYSTRING_TEMPLATE = '?Query={}&$top={}&$skip={}&$format={}'
 
     def __init__(self, api_key, query, web_only=False, safe=False, custom_params=''):
